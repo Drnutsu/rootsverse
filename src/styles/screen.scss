@@ -1,0 +1,9 @@
+.stage {
+  &.day {
+    @apply bg-gradient-to-b from-blue-300 via-blue-100 to-blue-50;
+  }
+
+  &.night {
+    @apply bg-gradient-to-b from-indigo-600 via-indigo-400 to-yellow-400;
+  }
+}

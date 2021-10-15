@@ -1,0 +1,46 @@
+@import '~antd/dist/antd.css';
+@import './screen.scss';
+
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;700&display=swap');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  // font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+.App {
+  @apply h-screen;
+}
+
+// override
+.ant-popover-arrow-content,
+.ant-popover-inner-content {
+  @apply bg-base-100;
+}
+
+.ant-popover-inner-content {
+  @apply rounded-box;
+}
+
+.ant-popover-inner {
+  @apply bg-transparent rounded-box;
+}
+
+.ant-popover-placement-top,
+.ant-popover-placement-topLeft,
+.ant-popover-placement-topRight {
+  @apply mb-4;
+}
+
+/* Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
